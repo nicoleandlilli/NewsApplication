@@ -1,5 +1,5 @@
 Description： 
-Displaying news from the United States
+Displaying news of the United States
 
 language: Kotlin
 Design of software framework: MVVM+Retrofit+Realm
