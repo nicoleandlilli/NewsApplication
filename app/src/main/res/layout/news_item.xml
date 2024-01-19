@@ -2,15 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center_vertical">
 
 
-    <ImageView
-        android:id="@+id/iv_icon"
-        android:layout_width="88dp"
-        android:layout_height="88dp"
-        android:layout_marginLeft="5dp"
-        android:src="@mipmap/ic_picture"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="10dp">
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_picture"/>
+    </androidx.cardview.widget.CardView>
+
 
     <TextView
         android:text="I'm the Content"
@@ -19,7 +26,7 @@
         android:layout_height="100dp"
         android:layout_weight="1"
         android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
+        android:layout_marginRight="10dp"
         android:gravity="center|left"/>
 
 </LinearLayout>
